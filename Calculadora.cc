@@ -23,7 +23,7 @@ while(oper == "+" || oper == "-" || oper == "*" || oper == "/"){
 		else if (b == 0)
 			{
 			cout << "Error math: La operacion no es posible.";
-			}else (oper = "/" || b == 0);{
+			}else{
 				cout << "Divicon es: " << a / b << endl;
 			}
 		break;

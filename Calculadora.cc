@@ -28,7 +28,7 @@ int main(){
 	cout << "Ingrese un segundo numero: \n";
 	cin >> b; 
 
-	cout << "Elija que Operacion desea hacer: \n" << "+ - * / \n";
+	cout << "Elija que Operacion desea hacer: \n" << "+ - * / ^\n";
 	cin >> oper;
 
 
@@ -48,7 +48,7 @@ while(oper == "+" || oper == "-" || oper == "*" || oper == "^" || oper == "/")
 			}
 	else if (oper == "^")
 			{
-				resultado = potencia(x, (int) y);
+				resultado = potencia(a, (int) b);
 			}
 	else if (b == 0)
 			{
@@ -72,7 +72,5 @@ else
 }
 return(0);
 }
-
-
 
 

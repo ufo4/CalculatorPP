@@ -6,7 +6,7 @@
 using namespace std;
 
 
-/*float potencia(float base, int exponente){
+float potencia(float base, int exponente){
 	float resultado = 1;
 	int i;
 	for (i = 0; i < exponente; ++i)
@@ -14,7 +14,7 @@ using namespace std;
 		resultado *= base;
 	}
 	return resultado;
-}*/
+}
 
 
 int main(){
@@ -32,20 +32,27 @@ int main(){
 	cin >> oper;
 
 
-while(oper == "+" || oper == "-" || oper == "*" || oper == "/")
+while(oper == "+" || oper == "-" || oper == "*" || oper == "^" || oper == "/")
 {
-	if ( oper == "+"){  
-			resultado = a + b;
+	if ( oper == "+")
+			{  
+				resultado = a + b;
 			}		
-	else if (oper == "-"){ 
-			resultado = a - b;
+	else if (oper == "-")
+			{ 
+				resultado = a - b;
 			}
-	else if( oper =="*" ){
-			resultado = a * b;
+	else if( oper =="*" )
+			{
+				resultado = a * b;
+			}
+	else if (oper == "^")
+			{
+				resultado = potencia(x, (int) y);
 			}
 	else if (b == 0)
 			{
-			cout << "Error math: La operacion no es posible.\n";
+				cout << "Error math: La operacion no es posible.\n";
 			}else{
 				resultado = a / b;
 			}
@@ -65,5 +72,7 @@ else
 }
 return(0);
 }
+
+
 
 

@@ -11,10 +11,6 @@ int main(int argc, char const *argv[])
 	double x,y;
 	int eleccion; 
 
-	char iTilde = char(161);
-	char oTilde = char(162);
-	char uTilde = char(163);
-		
 	cout << "   ***Calculadora***\n   ";
 	cout << "Ingrese el primer numero: \n"; 
 	cin >> x;
@@ -25,12 +21,12 @@ int main(int argc, char const *argv[])
 
 	cout << "  ***Calculadora***  \n";
 	cout << "x =  "<< x << "\t y = " << y << "\n";
-	cout << "Escriba el n"<< uTilde <<"umero de la operaci"<<  oTilde <<"on que desea hacer \n";
+	cout << "Escriba el numero de la operacion que desea hacer \n";
 	cout << "1. Suma: x + y" << endl;
 	cout << "2. Resta: x - y" << endl;
-	cout << "3. Multiplicac" << oTilde << "n: x * y" << endl;
-	cout << "4. Divisi" << oTilde << "n decimal: x / y (Devuelve el valor en decimal)" << endl;
-	cout << "5. Divisi" << oTilde << "n eucl" << iTilde << "dea: x / y (Devuelve el cociente y el residuo)" << endl;
+	cout << "3. Multiplicacion: x * y" << endl;
+	cout << "4. Division decimal: x / y (Devuelve el valor en decimal)" << endl;
+	cout << "5. Division euclidea: x / y (Devuelve el cociente y el residuo)" << endl;
 
 	cout << "\n";
 
@@ -54,7 +50,7 @@ int main(int argc, char const *argv[])
 
 	if (eleccion == 3)
 	{
-		cout << "El resultado de la multiplicaci" << oTilde << "n " << x << " * " << y << " es: " << (x*y) << endl;
+		cout << "El resultado de la multiplicacion " << x << " * " << y << " es: " << (x*y) << endl;
 	}
 
 	//Divicion simple
@@ -88,7 +84,7 @@ int main(int argc, char const *argv[])
 	{
 		if (x < 1)
 		{
-			cout << "Error: El " << iTilde << "no puede ser un valor menor que 1" << "\n";
+			cout << "Error: El no puede ser un valor menor que 1" << "\n";
 		}
 		else
 		{
@@ -98,7 +94,7 @@ int main(int argc, char const *argv[])
 			}
 			else
 			{
-				cout << "El resultado de la ra" << iTilde << "z con "<< iTilde << "ndice " << x << "y radicando " << y << " es: " << pow(float(y), 1.0/float(x)) << "\n";
+				cout << "El resultado de la raiz con indice " << x << "y radicando " << y << " es: " << pow(float(y), 1.0/float(x)) << "\n";
 			}
 		}
 	}

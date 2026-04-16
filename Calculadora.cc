@@ -20,7 +20,7 @@ float potencia(float base, int exponente){
 int main(){
 	double a, b, resultado; 
 	string oper; 
-	bool valido = true;
+	bool valido = false;
 	
 	cout << "Ingrese un numero: \n";
 	cin >> a;
@@ -56,21 +56,17 @@ while(oper == "+" || oper == "-" || oper == "*" || oper == "^" || oper == "/")
 			}else{
 				resultado = a / b;
 			}
-			valido = false;
+		valido = true;
 		break;
 
 }
 
 
-if (valido)
-{
-	printf("El resultado es %f\n", resultado);
-}
-else
-{
-	printf("Operacion invalida\n");
-}
-return(0);
+	if (valido == true)
+		{printf("El resultado es %f\n", resultado);}
+	else
+		{printf("Operacion invalida\n");}
+	return(0);
 }
 
 
